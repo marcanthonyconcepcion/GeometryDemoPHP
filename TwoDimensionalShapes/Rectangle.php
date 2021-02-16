@@ -2,8 +2,8 @@
 
 require_once __DIR__ . '/../GeometricFigures/TwoDimensionalShape.php';
 
-class Rectangle implements TwoDimensionalShape {
-
+class Rectangle implements TwoDimensionalShape
+{
     private int|float $length;
     private int|float $width;
 

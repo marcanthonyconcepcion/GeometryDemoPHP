@@ -3,8 +3,8 @@
 require_once __DIR__."/../GeometricFigures/TwoDimensionalShape.php";
 
 
-class Prism implements ThreeDimensionalShape {
-
+class Prism implements ThreeDimensionalShape
+{
     private int|float $height;
     private TwoDimensionalShape $base_shape;
 

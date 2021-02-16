@@ -4,7 +4,8 @@ use JetBrains\PhpStorm\Pure;
 
 require_once __DIR__ . '/../GeometricFigures/TwoDimensionalShape.php';
 
-class Circle implements TwoDimensionalShape {
+class Circle implements TwoDimensionalShape
+{
     private int|float $radius;
 
     function __construct($radius) {

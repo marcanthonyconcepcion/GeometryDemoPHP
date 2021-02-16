@@ -6,10 +6,11 @@ require_once __DIR__."/../TwoDimensionalShapes/Rectangle.php";
 require_once __DIR__."/../TwoDimensionalShapes/Square.php";
 require_once __DIR__."/../TwoDimensionalShapes/Triangle.php";
 
-
 use PHPUnit\Framework\TestCase;
 
-class TwoDimensionalShapesTest extends TestCase {
+
+class TwoDimensionalShapesTest extends TestCase
+{
     private TwoDimensionalShape $dut;
 
     protected function tearDown() : void {

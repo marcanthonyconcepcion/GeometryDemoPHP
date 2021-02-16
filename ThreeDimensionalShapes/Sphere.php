@@ -4,7 +4,8 @@ require_once __DIR__."/../GeometricFigures/ThreeDimensionalShape.php";
 
 use JetBrains\PhpStorm\Pure;
 
-class Sphere implements ThreeDimensionalShape {
+class Sphere implements ThreeDimensionalShape
+{
     private int|float $radius;
 
     function __construct($radius) {
