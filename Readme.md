@@ -133,8 +133,6 @@ Rectangular Prism is a Prism which is a Three-Dimensional Shape.
 
 Triangular Prism is a Prism which is a Three-Dimensional Shape.
 
-To run the two test classes, please pip install and run unittest Python module.
-
 For more inquiries, please feel free to e-mail me at marcanthonyconcepcion@gmail.com.
 
 Thank you.
