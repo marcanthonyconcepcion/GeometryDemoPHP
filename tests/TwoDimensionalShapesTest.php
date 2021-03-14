@@ -1,10 +1,7 @@
 <?php
 
 require_once __DIR__."/../GeometricFigures.php";
-require_once __DIR__."/../TwoDimensionalShapes/Circle.php";
-require_once __DIR__."/../TwoDimensionalShapes/Rectangle.php";
-require_once __DIR__."/../TwoDimensionalShapes/Square.php";
-require_once __DIR__."/../TwoDimensionalShapes/Triangle.php";
+require_once __DIR__."/../TwoDimensionalShapes.php";
 
 use PHPUnit\Framework\TestCase;
 

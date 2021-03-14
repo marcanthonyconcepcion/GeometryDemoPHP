@@ -1,13 +1,7 @@
 <?php
 
 require_once __DIR__."/../GeometricFigures.php";
-require_once __DIR__."/../GeometricFigures.php";
-require_once __DIR__."/../ThreeDimensionalShapes/Prism.php";
-require_once __DIR__."/../ThreeDimensionalShapes/RectangularPrism.php";
-require_once __DIR__."/../ThreeDimensionalShapes/Sphere.php";
-require_once __DIR__."/../ThreeDimensionalShapes/Cylinder.php";
-require_once __DIR__."/../ThreeDimensionalShapes/TriangularPrism.php";
-require_once __DIR__."/../ThreeDimensionalShapes/Cube.php";
+require_once __DIR__."/../ThreeDimensionalShapes.php";
 
 use PHPUnit\Framework\TestCase;
 
