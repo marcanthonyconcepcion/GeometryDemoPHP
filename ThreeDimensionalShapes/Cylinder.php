@@ -1,14 +1,12 @@
 <?php
 
-use JetBrains\PhpStorm\Pure;
-
 require_once __DIR__."/../TwoDimensionalShapes/Circle.php";
-require_once __DIR__."/../ThreeDimensionalShapes/Prism.php";
+require_once "Prism.php";
 
 
 class Cylinder extends Prism
 {
-    #[Pure] function __construct($height, $radius) {
+    function __construct(int|float $height, int|float $radius) {
         parent::__construct(new Circle($radius), $height);
     }
 }

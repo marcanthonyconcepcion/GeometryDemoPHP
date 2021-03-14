@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__."/../GeometricFigures/TwoDimensionalShape.php";
+require_once __DIR__."/../GeometricFigures.php";
 
 
 class Prism implements ThreeDimensionalShape
@@ -8,7 +8,7 @@ class Prism implements ThreeDimensionalShape
     private int|float $height;
     private TwoDimensionalShape $base_shape;
 
-    function __construct($base_shape, $height) {
+    function __construct(TwoDimensionalShape $base_shape, int|float $height) {
         $this->height = $height;
         $this->base_shape = $base_shape;
     }

@@ -1,8 +1,7 @@
 <?php
 
-require_once __DIR__."/../GeometricFigures/ThreeDimensionalShape.php";
+require_once __DIR__."/../GeometricFigures.php";
 
-use JetBrains\PhpStorm\Pure;
 
 class Sphere implements ThreeDimensionalShape
 {
@@ -12,11 +11,11 @@ class Sphere implements ThreeDimensionalShape
         $this->radius = $radius;
     }
 
-    #[Pure] function getVolume(): int|float {
+    function getVolume(): int|float {
         return 4 * pi() * pow($this->radius,3)/3;
     }
 
-    #[Pure] function getSurfaceArea(): int|float {
+    function getSurfaceArea(): int|float {
         return 4 * pi() * pow($this->radius,2);
     }
 }

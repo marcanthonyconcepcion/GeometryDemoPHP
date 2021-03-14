@@ -1,7 +1,7 @@
 <?php
 
 require_once __DIR__."/../TwoDimensionalShapes/Triangle.php";
-require_once __DIR__."/../ThreeDimensionalShapes/Prism.php";
+require_once "Prism.php";
 
 
 class TriangularPrism extends Prism

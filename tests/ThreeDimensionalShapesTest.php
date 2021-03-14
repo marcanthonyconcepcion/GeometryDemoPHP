@@ -1,7 +1,7 @@
 <?php
 
-require_once __DIR__."/../GeometricFigures/ThreeDimensionalShape.php";
-require_once __DIR__."/../GeometricFigures/TwoDimensionalShape.php";
+require_once __DIR__."/../GeometricFigures.php";
+require_once __DIR__."/../GeometricFigures.php";
 require_once __DIR__."/../ThreeDimensionalShapes/Prism.php";
 require_once __DIR__."/../ThreeDimensionalShapes/RectangularPrism.php";
 require_once __DIR__."/../ThreeDimensionalShapes/Sphere.php";
@@ -22,7 +22,7 @@ class ThreeDimensionalShapesTest extends TestCase
 
     function testPrism() {
         $length = 40;
-        $width = 50;
+        $width = 50.35;
         $height = 60;
         $base_rectangle_area = $length * $width;
         $base_rectangle_perimeter = 2 * ($length + $width);
@@ -37,9 +37,9 @@ class ThreeDimensionalShapesTest extends TestCase
     }
 
     function testRectangularPrism() {
-        $length = 10;
+        $length = 10.67;
         $width = 20;
-        $height = 30;
+        $height = 30.35;
         $base_rectangle_area = $length * $width;
         $base_rectangle_perimeter = 2*($length + $width);
         $expected_volume = $height * $base_rectangle_area;
@@ -50,7 +50,7 @@ class ThreeDimensionalShapesTest extends TestCase
     }
 
     function testSphere() {
-        $radius = 10;
+        $radius = 10.34;
         $expected_volume = 4*pi()*pow($radius, 3)/3;
         $expected_surface_area = 4*pi()*pow($radius,2);
         $this->dut = new Sphere($radius);
@@ -60,7 +60,7 @@ class ThreeDimensionalShapesTest extends TestCase
 
     function testCylinder() {
         $radius = 10;
-        $height = 30;
+        $height = 30.34;
         $base_circle_area = pi() * pow($radius,2);
         $base_circle_perimeter = 2 * pi() * $radius;
         $expected_volume = $height * $base_circle_area;
@@ -76,7 +76,7 @@ class ThreeDimensionalShapesTest extends TestCase
 
     function testTriangularPrism() {
         $a = 20;
-        $b = 30;
+        $b = 30.34;
         $c = 40;
         $prism_height = 30;
         $base_triangle_perimeter = $a + $b + $c;
@@ -91,7 +91,7 @@ class ThreeDimensionalShapesTest extends TestCase
     }
 
     function testCube() {
-        $side = 10;
+        $side = 10.34;
         $base_square_area = pow($side, 2);
         $base_square_perimeter = 4 * $side;
         $expected_volume = $side * $base_square_area;

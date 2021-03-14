@@ -1,13 +1,11 @@
 <?php
 
-use JetBrains\PhpStorm\Pure;
-
-require_once __DIR__."/../ThreeDimensionalShapes/RectangularPrism.php";
+require_once "RectangularPrism.php";
 
 
 class Cube extends RectangularPrism
 {
-    #[Pure] function __construct($side) {
+    function __construct(int|float $side) {
         parent::__construct($side, $side, $side);
     }
 }
