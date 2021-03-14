@@ -14,11 +14,11 @@ class Prism implements ThreeDimensionalShape
         $this->base_shape = $base_shape;
     }
     
-    function getVolume(): int|float {
+    function getVolume() {
         return $this->height * $this->base_shape->getArea();
     }
     
-    function getSurfaceArea(): int|float {
+    function getSurfaceArea() {
         return 2 * $this->base_shape->getArea() + $this->height * $this->base_shape->getPerimeter();
     }
 }
@@ -32,11 +32,11 @@ class Sphere implements ThreeDimensionalShape
         $this->radius = $radius;
     }
     
-    function getVolume(): int|float {
+    function getVolume() {
         return 4 * pi() * pow($this->radius,3)/3;
     }
     
-    function getSurfaceArea(): int|float {
+    function getSurfaceArea() {
         return 4 * pi() * pow($this->radius,2);
     }
 }
