@@ -59,18 +59,25 @@ class TwoDimensionalShapesTest extends TestCase
         $half_perimeter = ($first_side + $second_side + $third_side)/2;
         $expected_area = sqrt($half_perimeter * ($half_perimeter - $first_side) * ($half_perimeter - $second_side)
             * ($half_perimeter - $third_side));
-        $expected_perimeter = intval($first_side + $second_side + $third_side);
+        $expected_perimeter = $first_side + $second_side + $third_side;
 
         $this->dut = new Triangle($first_side, $second_side, $third_side);
         $this->assertEquals($expected_area, $this->dut->getArea());
         $this->assertEquals($expected_perimeter, $this->dut->getPerimeter());
     }
 
-    function testInvalidTriangle() {
-        $first_side = 10;
-        $second_side = 20;
-        $third_side = 30;
+    function testInvalidTriangleFirstSideFail() {
         $this->expectException(InvalidTriangleError::class);
-        $this->dut = new Triangle($first_side, $second_side, $third_side);
+        new Triangle(31, 20, 10);
     }
+    
+    function testInvalidTriangleSecondSideFail() {
+        $this->expectException(InvalidTriangleError::class);
+        new Triangle(15, 40, 20);
+    }    
+
+    function testInvalidTriangleThirdSideFail() {
+        $this->expectException(InvalidTriangleError::class);
+        new Triangle(10, 20, 30);
+    }    
 }
