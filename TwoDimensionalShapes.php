@@ -54,7 +54,7 @@ class Triangle implements TwoDimensionalShape
     public int|float $a, $b, $c;
     
     function __construct(int|float $a, int|float $b, int|float $c) {
-        if (($a + $b > $c && $a + $c > $b && $a + $c > $b) === false) {
+        if (($a + $b > $c && $a + $c > $b && $b + $c > $a) === false) {
             throw new InvalidTriangleError("NOT A TRIANGLE. Please provide valid triangle sides.");
         }
         $this->a = $a;
